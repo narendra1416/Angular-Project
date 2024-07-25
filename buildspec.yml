@@ -7,7 +7,7 @@ phases:
       - npm install -g @npmcli/package-json
   pre_build:
     commands:
-      - ng build -c production
+      - ng build --configuration production --aot
 artifacts:
   base-directory: dist/my-angular-project
   files:

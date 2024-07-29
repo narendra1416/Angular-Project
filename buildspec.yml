@@ -10,6 +10,8 @@ phases:
     commands:
       - ng build --configuration production
 artifacts:
-  base-directory: dist/my-angular-project
+  base-directory: 
   files:
-    - '**/*'
+    - 'dist/my-angular-project/**/*'
+    - appspec.yml
+    - 'deploy-scripts/**/*'
